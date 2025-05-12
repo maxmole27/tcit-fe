@@ -1,0 +1,9 @@
+.post-filter {
+  display: flex;;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.post-filter input {
+  width: 100%;
+}

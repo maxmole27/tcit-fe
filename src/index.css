@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #4db6ac;
+  --color-contrast: #282c34;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
