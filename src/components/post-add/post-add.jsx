@@ -1,13 +1,14 @@
-import { InputText } from 'primereact/inputtext'
+import { useRef, useState } from 'react'
+import { useDispatch } from 'react-redux'
 
-import './post-add.css'
-import { Button } from 'primereact/button'
-import { useState } from 'react'
 import { addPost } from '../../store/store'
 import { addPost as addPostService } from '../../services/post.service'
+
+import { InputText } from 'primereact/inputtext'
+import { Button } from 'primereact/button'
 import { Toast } from 'primereact/toast'
-import { useRef } from 'react'
-import { useDispatch } from 'react-redux'
+
+import './post-add.css'
 
 function PostAdd() {
   const toast = useRef(null)
@@ -43,6 +44,7 @@ function PostAdd() {
       console.log('Post agregado correctamente', addRes)
       dispatch(addPost(addRes))
       show()
+      form.reset()
       console.log('formValues', formValues)
     } else {
       setErrors((prev) => [...prev, 'Error al agregar el post'])

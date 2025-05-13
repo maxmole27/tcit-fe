@@ -1,10 +1,11 @@
+import { useState } from 'react'
+import PostDelete from '../post-delete/post-delete'
+
 import { DataTable } from 'primereact/datatable'
 import { Column } from 'primereact/column'
 import { Button } from 'primereact/button'
 
 import './post-list.css'
-import PostDelete from '../post-delete/post-delete'
-import { useState } from 'react'
 
 function PostsList({ posts }) {
   const [showModalDelete, setShowModalDelete] = useState(false)

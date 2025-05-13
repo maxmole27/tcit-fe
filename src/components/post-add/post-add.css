@@ -3,6 +3,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem;
   border-radius: var(--border-radius);
+  margin: 2rem 0;
 }
 
 .post-add__form {
@@ -20,6 +21,7 @@
 }
 .post-add__inputcontent {
   flex: 3;
+  flex-wrap: wrap;
 }
 .post-add__btn {
   flex: 1;
