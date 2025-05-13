@@ -1,15 +1,14 @@
 .post-add {
-  background-color: rgba(0,0,0,.03);
-  border: 1px solid rgba(0,0,0,.1);
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
 
 .post-add__form {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-
 }
 
 .post-add__form .p-inputtext {
@@ -28,4 +27,12 @@
 
 .post-add__btn button {
   width: 100%;
+}
+
+.post-add__error-list {
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 1rem;
+  font-style: italic;
+  margin: 1rem 0;
+  border-radius: var(--border-radius);
 }

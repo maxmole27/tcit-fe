@@ -3,12 +3,12 @@ import PostsList from '../components/post-list/post-list'
 import PostFilter from '../components/post-filter/post-filter'
 import PostAdd from '../components/post-add/post-add'
 import { useSelector } from 'react-redux'
-
+import useGetPosts from '../hooks/useGetPosts'
 
 function PostManager() {
+  useGetPosts()
   const posts = useSelector((state) => state.post.postList)
   console.log('posts', posts)
-
   return (
     <>
       <Header />
@@ -19,7 +19,7 @@ function PostManager() {
             <PostFilter />
           </div>
           <div>
-            <PostsList />
+            <PostsList posts={posts} />
           </div>
           <div>
             <PostAdd />
@@ -29,6 +29,5 @@ function PostManager() {
     </>
   )
 }
-
 
 export default PostManager
