@@ -1,6 +1,31 @@
 .post-add {
-  background-color: rgba(0,0,0,.05);
+  background-color: rgba(0,0,0,.03);
   border: 1px solid rgba(0,0,0,.1);
   padding: 1rem;
   border-radius: 5px;
+}
+
+.post-add__form {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+}
+
+.post-add__form .p-inputtext {
+  width: 100%;
+}
+
+.post-add__form {
+  flex: 2;
+}
+.post-add__inputcontent {
+  flex: 3;
+}
+.post-add__btn {
+  flex: 1;
+}
+
+.post-add__btn button {
+  width: 100%;
 }
